@@ -1,0 +1,4 @@
+spring:
+  profiles: testing
+  application:
+    name: scconfig
