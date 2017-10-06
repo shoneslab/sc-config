@@ -1,4 +1,28 @@
 spring:
-  profiles: testing
   application:
-    name: scconfig
+      name: scconfig
+---
+spring:
+  profiles: testing
+security:
+  user:
+    password: weak
+server:
+    address: 127.0.0.1
+---
+spring:
+  profiles: default
+security:
+  user:
+    password: weak1
+server:
+    address: 127.0.0.10
+---
+spring:
+  profiles: docker
+security:
+  user:
+    password: weak2
+server:
+    address: 127.0.0.11
+
